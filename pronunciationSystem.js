@@ -36,7 +36,7 @@ class PronunciationSystem {
             const utterance = new SpeechSynthesisUtterance(word);
             utterance.voice = this.selectedVoice;
             utterance.lang = lang;
-            utterance.rate = word.length > 8 ? 0.8 : rate;
+            utterance.rate = rate;
             utterance.pitch = 1.0;
             utterance.volume = 1.0;
             utterance.onstart = () => {
@@ -68,14 +68,6 @@ class PronunciationSystem {
             this.synthesis.cancel();
         }
         this.isSpeaking = false;
-    }
-
-    pause() {
-        if (this.synthesis.speaking) this.synthesis.pause();
-    }
-
-    resume() {
-        if (this.synthesis.paused) this.synthesis.resume();
     }
 }
 
