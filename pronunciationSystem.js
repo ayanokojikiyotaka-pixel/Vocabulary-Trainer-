@@ -72,3 +72,4 @@ class PronunciationSystem {
 }
 
 window.pronunciation = new PronunciationSystem();
+// Force rebuild Sat Feb 21 17:13:08 +05 2026
