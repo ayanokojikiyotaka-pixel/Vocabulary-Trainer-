@@ -1,4 +1,3 @@
-cat > pronunciationSystem.js << 'EOF'
 class PronunciationSystem {
     constructor() {
         this.synthesis = window.speechSynthesis;
@@ -81,4 +80,3 @@ class PronunciationSystem {
 }
 
 window.pronunciation = new PronunciationSystem();
-EOF
